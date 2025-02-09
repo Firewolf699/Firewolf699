@@ -212,7 +212,7 @@
 					child_index += 0x80000000;
 
 				hdp = hdp.derive(child_index);
-				var key = ((hdp.keys_extended.privkey) && hdp.keys_extended.privkey!='') ? hdp.keys_extended.privkey : hdp.keys_extended.pubkey;
+				var key = ((hdp.k_extended.privkey) && hdp.keys_extended.privkey!='') ? hdp.k_extended.privkey : hdp.keys_extended.pubkey;
 				hdp = coinjs.hd(key);
 			}
 			return hdp;
